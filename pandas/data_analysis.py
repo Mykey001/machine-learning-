@@ -136,3 +136,21 @@ print(california_df.drop(index=0,axis=0))
 california_df.drop(columns='MedInc',axis=1)
 print(california_df.drop(columns='MedInc',axis=1))
 
+# locating a row using the index value
+diabetes_df.iloc[2]
+print(diabetes_df.iloc)
+
+# locating a particular column 
+
+print(california_df.iloc[:,0])
+print(california_df.iloc[:,1])
+print(california_df.iloc[:,2])
+print(california_df.iloc[:,-1])
+
+# CORRELATION : USED TO FIND THE RELATIONSHIP BTWN TWO VARIABLES
+#     POSITIVE ; ONE VARIABLE INCREASES AS ANOTHER INCREASES
+#     NEGATIVE ; ONE VARIABLE DECREASES AS ANOTHER DECREASES
+
+california_df.corr()
+
+print(california_df.corr)
