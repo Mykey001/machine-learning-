@@ -75,3 +75,32 @@ ax.bar(languages , people)
 plt.xlabel('LANGUAGES')
 plt.ylabel('NUMBER OF PEOPLE')
 plt.show()
+
+# Pie chart
+
+fig1 = plt.figure()
+ax = fig1.add_axes([0,0,1,1])
+languages = ['English', 'german', 'Swahili', 'Latin', 'French']
+ax.pie(people, labels = languages, autopct = '%1.1f%%')
+plt.show()
+
+# Scatter Plot
+
+x = np.linspace(0,30,50)
+y = np.sin(x)
+z = np.cos(x)
+fig2 = plt.figure()
+ax = fig2.add_axes([0,0,1,1])
+ax.scatter(x,y, color = 'g')
+ax.scatter(x,z, color = 'b')
+plt.show()
+
+# 3D SCATTER PLOT
+
+fig3 = plt.figure()
+ax = plt.axes(projection = '3d')
+z = 20*np.random.random(100)
+x = np.sin(z)
+y = np.cos(z)
+ax.scatter(x,y,z,c=z, cmap = 'Blues')
+plt.show()
