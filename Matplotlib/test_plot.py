@@ -104,3 +104,4 @@ x = np.sin(z)
 y = np.cos(z)
 ax.scatter(x,y,z,c=z, cmap = 'Blues')
 plt.show()
+
